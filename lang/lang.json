@@ -1,0 +1,39 @@
+{
+  "header": {
+    "lang_label": { "en": "En", "fa": "Fa" },
+    "lang_fa": { "en": "فارسی", "fa": "فارسی" },
+    "lang_en": { "en": "English", "fa": "English" },
+    "nav_projects": { "en": "Projects", "fa": "پروژه ها" },
+    "nav_about": { "en": "About Us", "fa": "درباره ما" },
+    "nav_contact": { "en": "Contact Us", "fa": "ارتباط با ما" },
+    "nav_consult": { "en": "Get Consultation", "fa": "دریافت مشاوره" }
+  },
+  "hero": {
+    "title": {
+      "en": "Opportunity to Build the Future Based on Science",
+      "fa": "فرصت ساخت آینده بر پایه علم."
+    },
+    "subtitle": {
+      "en": "We identify, structure, and commercialize strategic ideas in energy, instrumentation, and automation, and support high-tech projects scientifically.",
+      "fa": "ما ایده های استراتژیک در انرژی، ابزار دقیق و اتوماسیون را شناسایی، ساختارمند و تجاری سازی می‌کنیم و پشتوانه علمی پروژه های های تک هستیم."
+    }
+  },
+  "services": {
+    "items": {
+      "fa": [
+        { "title": "مخابرات", "description": "انتقال داده صنعتی" },
+        { "title": "اتوماسیون", "description": "کنترل فرآیندها" }
+      ],
+      "en": [
+        { "title": "Telecom", "description": "Industrial data transfer" },
+        { "title": "Automation", "description": "Process control" }
+      ]
+    },
+    "info": {
+      "title": { "fa": "فعال در صنایع مختلف", "en": "Active in many industries" },
+      "action": { "fa": "بیشتر بخوانید", "en": "Read more" }
+    }
+  }
+}
+
+

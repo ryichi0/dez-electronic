@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dez Electronic</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font.css" />
+    <!-- <link rel="stylesheet" href="animation.css" /> -->
+  </head>
+  <body>
+    <header class="home-header">
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="navbar__logo">
+          <a href="/">
+            <img width="100" src="./media/dez_logo.png" alt="Dez Electronic" />
+          </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="navbar__menu">
+          <li class="navbar__item navbar__lang">
+            <a href="#" class="navbar__link">
+              <img
+                src="./media/chevron-down-svgrepo-com.svg"
+                width="36"
+                class="logo"
+                alt=""
+              />
+              <span data-i18n="header.lang_label">Fa</span>
+            </a>
+            <div class="lang">
+              <button id="btn-fa" data-i18n="header.lang_fa">فارسی</button>
+              <button id="btn-en" data-i18n="header.lang_en">English</button>
+            </div>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__link" data-i18n="header.nav_projects">پروژه ها</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/products" class="navbar__link" data-i18n="header.nav_about">درباره ما</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/about" class="navbar__link" data-i18n="header.nav_contact">ارتباط با ما</a>
+          </li>
+          <li class="navbar__item btn-primary">
+            <a href="/contact" class="navbar__link" data-i18n="header.nav_consult">دریافت مشاوره</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="">
+      <section class="home-hero container section">
+        <div class="hero__header">
+          <h1 data-i18n="hero.title" class="hero__title">
+            فرصت ساخت آینده بر پایه علم.
+          </h1>
+          <p data-i18n="hero.subtitle" class="hero__subtitle">
+            ما ایده های استراتژیک در انرژی، ابزار دقیق و اتوماسیون را شناسایی، ساختارمند و تجاری سازی می‌کنیم و پشتوانه علمی پروژه های های تک هستیم.
+          </p>
+        </div>
+        <div class="hero__video">
+          <video controls poster="./media/video-thumbnail.png">
+            <source src="movie.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+
+
+      <section class="home-services section">
+        <article class="services__accordione" data-i18n="services.items">
+
+          <template>
+            <div class="card">
+              <div class="card__cover">
+                <div class="card__cover-title">
+                  <h5 data-field="title"></h5>
+                  <a href="">
+                    <img src="./media/up-arrow.svg" alt="">
+                  </a>
+                </div>
+                <p class="card__description" data-field="description"></p>
+              </div>
+            </div>
+          </template>
+
+        </article>
+
+        <aside class="services__info-card">
+          <h4 class="card__header" data-i18n="services.info.title"></h4>
+          <a class="card__action" href="" data-i18n="services.info.action"></a>
+        </aside>
+      </section>
+
+
+
+      <section class="home-about section container">
+        <h2 class="about__title skew-shape target">
+          نقطه‌ی آغاز، تحلیل دقیق شکاف‌های تکنولوژیک صنعت است. 
+        </h2>
+        <p class="about__description">اعتبار دزالکترونیک تحت یک معماری توسعه دقیق، تضمین شده است. متخصصان این مجموعه، پس از پژوهش‌های هدفمند، ایده‌های علمی را از فضای تئوری بیرون آورده و آن‌ها را در مسیر بلوغ و تحول فنی هدایت می‌کنند. هر ایده، تحت متدولوژی‌های دقیق تجاری‌سازی به یک راهکار پایدار و مقیاس‌پذیر تبدیل می‌شود. خروجی نهایی، یک محصول High-Tech عملیاتی (آماده به کار) است که مستقیماً مسیر خود را به سوی بازار پیدا کرده و تضمین‌کنندهٔ استقرار و بهره‌برداری موفق در صنعت شما خواهد بود.</p>
+        </div>
+      </section>
+
+      <section class="home-stats section">
+        <div class="stat__container">
+          <div class="stat__num">
+            15+
+          </div>
+          <div class="stat__description">
+            سال تجربه فناورانه
+          </div>
+        </div>
+        <div class="stat__container">
+          <div class="stat__num">
+            4+
+          </div>
+          <div class="stat__description">
+            ایده های فناورانه تبدیل شده به محصول
+          </div>
+        </div>
+        <div class="stat__container">
+          <div class="stat__num">
+            4+
+          </div>
+          <div class="stat__description">
+            حوزه‌های استراتژیک تمرکز        
+          </div>
+        </div>
+        <div class="stat__container">
+          <div class="stat__num">
+            4+
+          </div>
+          <div class="stat__description">
+            شرکت‌های کارآفرین زیرمجموعه
+          </div>
+        </div>
+      </section>
+
+      <section class="home-products container section">
+        <div class="product">
+          <div class="product__overview">
+            <div class="product__header skew-shape">
+              <h3 class="product__title">سیستم آنالیز امپدانس BacTrack</h3>
+              <p class="product__subtitle">ابزار دقیق میکروبیولوژی، تضمین کیفیت سریع و خودکار</p>
+            </div>
+            <div class="product__company">
+              <img src="./media/dana-gene-logo.png" alt="" class="logo">
+              <h4 class="company__name"> محصولی از شرکت دانا ژن</h4>
+            </div>
+            <div class="product__description">
+              <p>بک ترک یک تکنولوژی پیشرفته برای اندازه‌گیری لحظه‌ای (Real-Time) رشد میکروارگانیسم‌هاست. این راه‌کار با آنالیز امپدانس الکتریکی (Impedometry)، به شرکت‌ها کمک می‌کند تا زمان نیاز به نتایج تست‌های میکروبی را از چند روز به چند ساعت کاهش دهند و دقت خروجی را به بالاترین سطح ارتقا بخشند. این سیستم در مقیاس صنعتی عملکردی پایدار و قابل اتکا دارد.</p>
+              <ul class="product__features">
+                <li class="feature-item">افزایش بهره‌وری خط تولید با کاهش زمان چرخه کنترل کیفیت و قرنطینه محصول.</li>
+                <li class="feature-item">طراحی ماژولار صنعتی برای نصب، سرویس و توسعه سریع ظرفیت آزمایشگاهی.</li>
+                <li class="feature-item">پشتیبانی و به‌روزرسانی توسط تیم تخصصی دزاکترونیک</li>
+              </ul>
+            </div>
+            <div class="product__action">
+              <a class="btn btn-primary" href="">اطلاعات بیشتر</a>
+              <a class="btn btn-secondary" href="">آشنایی با شرکت</a>
+            </div>
+          </div>
+          <img class="product__img" width="100" src="./media/bactrack.jpg" alt="">
+        </div>
+        <div class="product">
+          <div class="product__overview">
+            <div class="product__header skew-shape">
+              <h3 class="product__title">سیستم آنالیز امپدانس BacTrack</h3>
+              <p class="product__subtitle">ابزار دقیق میکروبیولوژی، تضمین کیفیت سریع و خودکار</p>
+            </div>
+            <div class="product__company">
+              <img src="./media/dana-gene-logo.png" alt="" class="logo">
+              <h4 class="company__name"> محصولی از شرکت دانا ژن</h4>
+            </div>
+            <div class="product__description">
+              <p>بک ترک یک تکنولوژی پیشرفته برای اندازه‌گیری لحظه‌ای (Real-Time) رشد میکروارگانیسم‌هاست. این راه‌کار با آنالیز امپدانس الکتریکی (Impedometry)، به شرکت‌ها کمک می‌کند تا زمان نیاز به نتایج تست‌های میکروبی را از چند روز به چند ساعت کاهش دهند و دقت خروجی را به بالاترین سطح ارتقا بخشند. این سیستم در مقیاس صنعتی عملکردی پایدار و قابل اتکا دارد.</p>
+              <ul class="product__features">
+                <li class="feature-item">افزایش بهره‌وری خط تولید با کاهش زمان چرخه کنترل کیفیت و قرنطینه محصول.</li>
+                <li class="feature-item">طراحی ماژولار صنعتی برای نصب، سرویس و توسعه سریع ظرفیت آزمایشگاهی.</li>
+                <li class="feature-item">پشتیبانی و به‌روزرسانی توسط تیم تخصصی دزاکترونیک</li>
+              </ul>
+            </div>
+            <div class="product__action">
+              <a class="btn btn-primary" href="">اطلاعات بیشتر</a>
+              <a class="btn btn-secondary" href="">آشنایی با شرکت</a>
+            </div>
+          </div>
+          <img class="product__img" width="100" src="./media/bactrack.jpg" alt="">
+        </div>
+        <div class="product">
+          <div class="product__overview">
+            <div class="product__header skew-shape">
+              <h3 class="product__title">سیستم آنالیز امپدانس BacTrack</h3>
+              <p class="product__subtitle">ابزار دقیق میکروبیولوژی، تضمین کیفیت سریع و خودکار</p>
+            </div>
+            <div class="product__company">
+              <img src="./media/dana-gene-logo.png" alt="" class="logo">
+              <h4 class="company__name"> محصولی از شرکت دانا ژن</h4>
+            </div>
+            <div class="product__description">
+              <p>بک ترک یک تکنولوژی پیشرفته برای اندازه‌گیری لحظه‌ای (Real-Time) رشد میکروارگانیسم‌هاست. این راه‌کار با آنالیز امپدانس الکتریکی (Impedometry)، به شرکت‌ها کمک می‌کند تا زمان نیاز به نتایج تست‌های میکروبی را از چند روز به چند ساعت کاهش دهند و دقت خروجی را به بالاترین سطح ارتقا بخشند. این سیستم در مقیاس صنعتی عملکردی پایدار و قابل اتکا دارد.</p>
+              <ul class="product__features">
+                <li class="feature-item">افزایش بهره‌وری خط تولید با کاهش زمان چرخه کنترل کیفیت و قرنطینه محصول.</li>
+                <li class="feature-item">طراحی ماژولار صنعتی برای نصب، سرویس و توسعه سریع ظرفیت آزمایشگاهی.</li>
+                <li class="feature-item">پشتیبانی و به‌روزرسانی توسط تیم تخصصی دزاکترونیک</li>
+              </ul>
+            </div>
+            <div class="product__action">
+              <a class="btn btn-primary" href="">اطلاعات بیشتر</a>
+              <a class="btn btn-secondary" href="">آشنایی با شرکت</a>
+            </div>
+          </div>
+          <img class="product__img" width="100" src="./media/bactrack.jpg" alt="">
+        </div>
+        <div class="product">
+          <div class="product__overview">
+            <div class="product__header skew-shape">
+              <h3 class="product__title">سیستم آنالیز امپدانس BacTrack</h3>
+              <p class="product__subtitle">ابزار دقیق میکروبیولوژی، تضمین کیفیت سریع و خودکار</p>
+            </div>
+            <div class="product__company">
+              <img src="./media/dana-gene-logo.png" alt="" class="logo">
+              <h4 class="company__name"> محصولی از شرکت دانا ژن</h4>
+            </div>
+            <div class="product__description">
+              <p>بک ترک یک تکنولوژی پیشرفته برای اندازه‌گیری لحظه‌ای (Real-Time) رشد میکروارگانیسم‌هاست. این راه‌کار با آنالیز امپدانس الکتریکی (Impedometry)، به شرکت‌ها کمک می‌کند تا زمان نیاز به نتایج تست‌های میکروبی را از چند روز به چند ساعت کاهش دهند و دقت خروجی را به بالاترین سطح ارتقا بخشند. این سیستم در مقیاس صنعتی عملکردی پایدار و قابل اتکا دارد.</p>
+              <ul class="product__features">
+                <li class="feature-item">افزایش بهره‌وری خط تولید با کاهش زمان چرخه کنترل کیفیت و قرنطینه محصول.</li>
+                <li class="feature-item">طراحی ماژولار صنعتی برای نصب، سرویس و توسعه سریع ظرفیت آزمایشگاهی.</li>
+                <li class="feature-item">پشتیبانی و به‌روزرسانی توسط تیم تخصصی دزاکترونیک</li>
+              </ul>
+            </div>
+            <div class="product__action">
+              <a class="btn btn-primary" href="">اطلاعات بیشتر</a>
+              <a class="btn btn-secondary" href="">آشنایی با شرکت</a>
+            </div>
+          </div>
+          <img class="product__img" width="100" src="./media/bactrack.jpg" alt="">
+        </div>
+      </section>
+
+      <section class="home-achievements container section">
+        <h2 class="achievements__title skew-shape">افتخارات دز الکترونیک</h2>
+
+        <div class="achievements__list">
+          <div class="achievements__item">
+            <img class="item__img" width="100" src="./media/cert-01.png" alt="">
+            <div class="item__hover-state">
+              <h5 class="item__title">عنوان لوح تقدیر</h5>
+              <div class="item__issuer">
+                <img class="item-icon" src="./media/Icon.png" alt="">
+                <span>اتاق بازرگانی تهران</span>
+              </div>
+            </div>
+          </div>  
+          <div class="achievements__item">
+            <img class="item__img" width="100" src="./media/cert-01.png" alt="">
+            <div class="item__hover-state">
+              <h5 class="item__title">عنوان لوح تقدیر</h5>
+              <div class="item__issuer">
+                <img class="item-icon" src="./media/Icon.png" alt="">
+                <span>اتاق بازرگانی تهران</span>
+              </div>
+            </div>
+          </div>  
+          <div class="achievements__item">
+            <img class="item__img" width="100" src="./media/cert-01.png" alt="">
+            <div class="item__hover-state">
+              <h5 class="item__title">عنوان لوح تقدیر</h5>
+              <div class="item__issuer">
+                <img class="item-icon" src="./media/Icon.png" alt="">
+                <span>اتاق بازرگانی تهران</span>
+              </div>
+            </div>
+          </div>  
+          <div class="achievements__item">
+            <img class="item__img" width="100" src="./media/cert-01.png" alt="">
+            <div class="item__hover-state">
+              <h5 class="item__title">عنوان لوح تقدیر</h5>
+              <div class="item__issuer">
+                <img class="item-icon" src="./media/Icon.png" alt="">
+                <span>اتاق بازرگانی تهران</span>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </section>
+
+      
+    </main>
+
+    <footer class="home-footer container">
+      <div class="footer">
+        <!-- Contact -->
+        <div class="footer__section">
+          <div class="footer__title">
+            <h4>
+              <img width="36" class="logo" src="./media/dez_logo.png" alt="" />
+              دز الکترونیک جنوب
+            </h4>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است
+            </p>
+          </div>
+          <ul>
+            <li>
+              <a href="mailto:info@site.com">
+                <img width="16" src="./media/location.svg" alt="" />
+                خوزستان-اهواز-مجتمع x
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img width="20" class="icon" src="./media/phone.svg" alt="" />
+                06133364527-29
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pages -->
+        <div class="footer__section">
+          <div class="footer__title">
+            <h4>صفحات</h4>
+          </div>
+          <ul class="footer__contact">
+            <li>
+              <a href="#"> محصولات </a>
+            </li>
+            <li>
+              <a href="#"> تماس با ما </a>
+            </li>
+            <li>
+              <a href="#"> درباره ما </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Socials -->
+        <div class="footer__section">
+          <div class="footer__title">
+            <h4>شبکه های اجتماعی</h4>
+          </div>
+          <ul class="footer__contact">
+            <li>
+              <a href="#">
+                <img src="./media/instagram.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./media/linkedin.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy__right">
+        <p>© تمامی حقوق برای دز الکترونیک جنوب محفوظ است.</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+
+  </body>
+</html>

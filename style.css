@@ -1,0 +1,771 @@
+:root {
+  /* =========================
+     Color Primary
+  ========================= */
+  --color-primary-50: #79879f;
+  --color-primary-100: #6a7a95;
+  --color-primary-200: #4a5568;
+  --color-primary-300: #424b5c;
+  --color-primary-400: #394250;
+  --color-primary-500: #20242c;
+  --color-primary-600: #101010;
+  --color-primary-700: #000000;
+
+  --color-primary-background-texts: #ffffff;
+  --color-primary-stroke: #ececec;
+
+  /* =========================
+     Color Accent
+  ========================= */
+  --color-accent-50: #007e74;
+  --color-accent-100: #00655c;
+  --color-accent-200-main: #004b45;
+  --color-accent-300: #003a35;
+  --color-accent-400: #002926;
+  --color-accent-500: #001816;
+  --color-accent-600: #000000;
+
+  /* =========================
+     Font Family
+  ========================= */
+  --font-fa-primary:"Peyda" , sans-serif;
+  --font-fa-secondary:"YekanBakh", sans-serif;
+  --font-en-primary: "Inter", sans-serif;
+
+  /* =========================
+     Font Sizes
+  ========================= */
+  --text-sm: 0.75rem;
+  --text-md: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.375rem;
+  --text-3xl: 1.5rem;
+  --text-4xl: 1.625rem;
+  --text-5xl: 1.75rem;
+  --text-6xl: 2rem;
+  --text-7xl: 2.625rem;
+  --text-8xl: 2.875rem;
+
+  /* =========================
+     Font Weights
+  ========================= */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  /* =========================
+     Line Heights – FA
+  ========================= */
+  --leading-fa-sm: 1.25rem;
+  --leading-fa-md: 1.5rem;
+  --leading-fa-base: 1.75rem;
+  --leading-fa-lg: 2rem;
+  --leading-fa-xl: 2.125rem;
+  --leading-fa-2xl: 2.375rem;
+  --leading-fa-3xl: 2.75rem;
+  --leading-fa-4xl: 3rem;
+  --leading-fa-5xl: 3.375rem;
+  --leading-fa-6xl: 3.813rem;
+  --leading-fa-7xl: 4.438rem;
+  --leading-fa-8xl: 4.875rem;
+
+  /* =========================
+     Line Heights – EN
+  ========================= */
+  --leading-en-sm: 1.125rem;
+  --leading-en-md: 1.375rem;
+  --leading-en-base: 1.5rem;
+  --leading-en-lg: 1.75rem;
+  --leading-en-xl: 1.875rem;
+  --leading-en-2xl: 2.125rem;
+  --leading-en-3xl: 2.5rem;
+  --leading-en-4xl: 2.75rem;
+  --leading-en-5xl: 3rem;
+  --leading-en-6xl: 3.375rem;
+  --leading-en-7xl: 3.875rem;
+  --leading-en-8xl: 4.313rem;
+}
+
+
+/* =========================
+  Reset Styles
+========================= */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+}
+
+a { 
+  text-decoration: none;
+  all: unset;
+  cursor: pointer;
+}
+
+ul { 
+  list-style-type: none;
+}
+
+
+/* =========================
+  Lang Typography
+========================= */
+body {
+  position: relative;
+
+  &.lang-fa {
+    direction: rtl;
+    font-family: var(--font-fa-secondary);
+    line-height: var(--leading-fa-base);
+
+    :where(h1, h2, h3, h4, h5, h6) {
+      font-family: var(--font-fa-primary);
+    }
+
+    h1 {
+      font-size: 4.625rem;
+      font-weight: var(--font-extrabold);
+      line-height: 6rem;
+    }
+
+    h2 {
+      font-size: var(--text-5xl);
+      font-weight: var(--font-bold);
+      line-height: var(--leading-fa-5xl);
+      color: var(--color-primary-500);
+    }
+
+    h3 { font-size: var(--text-4xl); font-weight: var(--font-bold); line-height: var(--leading-fa-4xl); }
+    h4 { font-size: var(--text-xl); font-weight: var(--font-bold); line-height: var(--leading-fa-xl); }
+    h5 { font-size: var(--text-xl); font-weight: var(--font-medium); line-height: var(--leading-fa-xl); }
+
+    p {
+      font-family: var(--font-fa-secondary);
+      font-size: var(--text-lg);
+      font-weight: var(--font-light);
+      line-height: var(--leading-fa-lg);
+      color: var(--color-primary-300);
+    }
+  }
+
+  &.lang-en {
+    direction: ltr;
+    font-family: var(--font-en-primary);
+    line-height: var(--leading-en-base);
+
+    :where(h1, h2, h3, h4, h5, h6) {
+      font-family: var(--font-en-primary);
+    }
+
+    h1 {
+      font-size: 4.5rem;
+      font-weight: var(--font-extrabold);
+      line-height: 5.5rem;
+    }
+
+    h2 {
+      font-size: var(--text-5xl);
+      font-weight: var(--font-bold);
+      line-height: var(--leading-en-5xl);
+      color: var(--color-primary-500);
+    }
+
+    h3 { font-size: var(--text-4xl); font-weight: var(--font-bold); line-height: var(--leading-en-4xl); }
+    h4 { font-size: var(--text-xl); font-weight: var(--font-bold); line-height: var(--leading-en-xl); }
+    h5 { font-size: var(--text-xl); font-weight: var(--font-medium); line-height: var(--leading-en-xl); }
+
+    p {
+      font-family: var(--font-en-primary);
+      font-size: var(--text-lg);
+      font-weight: var(--font-light);
+      line-height: var(--leading-en-lg);
+      color: var(--color-primary-300);
+    }
+  }
+}
+
+
+/* =========================
+  General Styles
+========================= */
+.btn {
+  border: 1px solid var(--color-accent-200-main);
+  font-family: var(--font-fa-secondary);
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-fa-sm);
+}
+.btn-primary {
+  background: var(--color-accent-200-main);
+  color: var(--color-primary-background-texts);
+}
+
+.btn-secondary {
+  background: var(--color-primary-background-texts);
+  color: var(--color-accent-200-main);
+}
+
+/* =========================
+  Hero Section
+========================= */
+.home-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-block-start: 144px;
+
+  .hero__header{
+    max-width: 628px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .hero__subtitle{
+      max-width: 520px;
+      font-weight: var(--font-semibold);
+      font-size: var(--text-base);
+      line-height: var(--leading-fa-base);
+      color: var(--color-primary-500)
+    }
+  }
+
+  .hero__video {
+    video {
+      width: 326px;
+      height: 181px;
+    }
+  }
+}
+
+/* =========================
+  Services Section
+========================= */
+.home-services{
+  display: grid;
+  grid-template-columns: 7fr 265px;
+  height: 222px;
+
+  .services__accordione{
+    display: flex;
+  
+    .card{
+      background: url('./media/industry.jpg') center / cover no-repeat;
+      flex: 1;
+      transition: flex 0.5s, filter 0.5s;
+      filter: grayscale(100%);
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    .card:hover{
+      flex: 2;
+      filter: grayscale(0);
+    
+      & .card__cover{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+      }
+    }
+    
+    .card__cover{
+      display: none;
+      padding: 1em;
+      background-color: var(--color-accent-200-main);
+      color: var(--color-primary-background-texts);
+      width: 100%;
+      animation: fade-up 0.5s;
+      height: 50%;
+
+      .card__cover-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .card__description{
+        font-size: var(--text-sm);
+        font-weight: var(--font-regular);
+        line-height: var(--leading-fa-sm);
+        color: inherit;
+      }
+    }
+  }
+
+  .services__info-card{
+    height: 100%;
+    background-color: var(--color-primary-600);
+    color: var(--color-primary-background-texts);
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+    .card__header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 38px;
+    }
+
+    .card__action{
+      font-size: var(--text-base);
+      font-weight: var(--font-regular);
+    }
+  }
+}
+
+/* =========================
+  About Section
+========================= */
+.home-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-block-start: 70px;
+  gap: 20px;
+  .about__title {
+    max-width: 426px;
+    position: relative;
+    font-size: var(--text-6xl);
+    font-weight: var(--font-bold);
+    line-height: var(--leading-fa-5xl);
+    color: var(--color-primary-500)
+    
+  }
+  .about__description {
+    max-width: 640px;
+
+  }
+}
+
+/* =========================
+  Stats Section
+========================= */
+.home-stats{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 324px);
+  justify-content: center;
+  border-block: 1px solid var(--color-primary-stroke);
+
+  .stat__container{
+    border-inline-end: 1px solid var(--color-primary-stroke);
+    padding: 16px 24px;
+    color: var(--color-accent-100);
+
+    &:nth-child(1) {
+      border-inline-start: 1px solid var(--color-primary-stroke);
+    }
+
+    .stat__num {
+      font-family: var(--font-fa-primary);
+      font-weight: var(--font-bold);
+      font-size: var(--text-7xl);
+      line-height: var(--leading-fa-5xl);
+      margin-block-end: 10px;
+    }
+
+    .stat__description {
+      font-size: var(--text-md);
+      line-height: var(--leading-fa-md);
+      font-weight: var(--font-semibold);
+
+    }
+  }
+}
+
+/* =========================
+  Products Section
+========================= */
+
+.home-products {
+  padding-block-start: 130px;
+  width: 100%;
+  position: relative;
+
+  .product {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    position: sticky;
+    top: 100px;
+    background: var(--color-primary-background-texts);
+    padding-block: 40px;
+
+    .product__img{
+      width: 411px;
+      height: 397px;
+      /* aspect-ratio: 1/1; */
+      object-fit: contain;
+    }
+
+    .product__overview{
+      max-width: 628px;
+
+      .product__header{
+        position: relative;
+
+        .product__subtitle{
+          font-weight: var(--font-semibold);
+          font-size: var(--text-lg);
+          line-height: var(--leading-fa-lg);
+        }
+      }
+
+      .product__company{
+        display: flex;
+        gap: 15px;
+        justify-content: start;
+        align-items: center;
+        margin-block-start: 10px;
+
+        .logo{
+          height: 16px;
+        }
+
+        .company__name{
+          color: var(--color-accent-50);
+          font-size: var(--text-lg);
+
+        }
+      }
+
+      .product__description {
+        *{
+          font-size: var(--text-base);
+          font-weight: var(--font-light);
+          line-height: var(--leading-fa-base);
+          color: var(--color-primary-300);
+          color: inherit;
+        }
+
+        .product__features{
+          list-style-type: disc;
+          list-style-position: inside;
+          margin-block-start: 8px;
+
+          .feature-item{
+            color: inherit;
+            font-size: inherit;
+          }
+        }
+      }
+
+      .product__action{
+        display: flex;
+        gap: 12px;
+        margin-block-start: 50px;
+
+        a{
+          padding: 8px 14px;
+
+        }
+      }
+    }
+  }
+}
+
+/* =========================
+  Achievements
+========================= */
+.home-achievements{
+  padding-block-start: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 116px;
+
+  .achievements__title{
+    position: relative;
+  }
+
+  .achievements__list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 48px;
+    
+    .achievements__item{
+      filter: grayscale(100);
+      width: 284px;
+      height: 367px;
+      position: relative;
+      transition: filter .4s ease;
+      
+      .item__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .item__hover-state {
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        position: absolute;
+        z-index: 6;
+        bottom: 0;
+        height: 149px;
+        width: 100%;
+        corner-shape: bevel;
+        border-top-left-radius: 60%;
+        background: var(--color-accent-50);
+        color: var(--color-primary-background-texts);
+        padding-inline-start: 22px;
+        transition: opacity .4s ease;
+        
+
+        .item__issuer {
+          padding: 10px;
+          padding-inline-start: 0;
+          display: flex;
+          gap: 10px;
+          justify-content: start;
+          align-items: center;
+
+          span{
+            font-weight: var(--font-light);
+          }
+
+          .item-icon {
+            width: 18px;
+          }
+        }
+      }
+
+      &::before{
+        content: '';
+        position: absolute;
+        z-index:-1;
+        background: var(--color-accent-100);
+        width: 100%;
+        height: 100%;
+        right: -14px;
+        bottom: -14px;
+        opacity: 0;
+        transition: opacity .4s ease;
+      }
+      
+
+      &:hover{
+        filter: grayscale(0);
+
+        & .item__hover-state{
+           opacity: 1;
+        }
+
+        &::before{
+          opacity: 1
+        }
+      }
+    }
+  }
+}
+
+/* =========================
+  Haeder / Navbar
+========================= */
+.home-header {
+  width: 100%;
+  border-bottom: 1px solid var(--color-primary-stroke);
+  position: sticky;
+  z-index: 7;
+  top: 0;
+  background: var(--color-primary-background-texts);
+  
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .navbar__logo{
+      align-self: center;
+      padding-inline: 80px;
+      img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    .navbar__menu {
+      display: flex;
+
+      .navbar__lang {
+        position: relative;
+        pointer-events: auto;
+
+        &:hover{
+          .lang{
+            opacity: 1
+          }
+        }
+      }
+      .navbar__item{
+        color: var(--color-primary-500);
+        border-inline-start: 1px solid var(--color-primary-stroke);
+        
+        & .lang {
+          position: absolute;
+          top: 106%;             
+          left: 0;
+          width: 100%;          
+          background: var(--color-primary-background-texts);
+          border: 1px solid var(--color-primary-stroke);
+          opacity: 0;
+          display: flex;
+          flex-direction: column;
+          z-index: 10;
+          transition: opacity .3s linear;
+
+          button {
+            padding: 0.5em;
+            border-bottom: 1px solid var(--color-primary-stroke);
+            background: transparent;
+
+            &:hover {
+              background-color: var(--color-primary-stroke);
+            }
+          }
+        }
+        & .navbar__link{
+          padding: 25px;
+          display: flex;
+        }
+
+        &.btn-primary {
+          color: var(--color-primary-background-texts);
+        }
+      }
+    }
+  }
+}
+
+/* =========================
+  Footer
+========================= */
+.home-footer{
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-gray);
+  background: var(--color-light);
+  width: 100%;
+  padding-block: 64px 48px;
+
+  .copy__right,
+  .footer{
+    padding-inline: 32px;
+  }
+
+  .footer{
+    margin-block-end: 64px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+
+    .footer__section {
+      max-width: 320px;
+
+      p,
+      a{
+        font-weight: 300;
+      }
+      .footer__title{
+        margin-block-end: 16px;
+
+        h4{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: var(--color-dark-800);
+          font-weight: 700;
+          font-size: 16px;
+        }
+        p{
+          margin-block-start: 16px;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        
+        li a{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+  & .copy__right{
+    p{
+      padding-block-start: 32px;
+      border-block-start: 1px solid var(--color-primary);
+      text-align: center;
+
+    }
+  }
+}
+
+/* =========================
+  Sizing & Layout
+========================= */
+.logo{
+  height: 26px;
+}
+.container{
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1.4rem;
+}
+
+.section {
+  margin-block-end: 80px;
+}
+
+/* .skew-shape {
+  width: 8px;
+  height: 100px;
+  background: var(--color-primary-500);
+  transform: skew(20deg);
+} */
+
+.skew-shape::before{
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 100%;
+  max-height: 100px;
+  inset: auto -20px auto 0;
+  background: var(--color-primary-500);
+  transform: skewY(-60deg);
+}
+
+/* .anchor{
+  width: 8px;
+  height: 100px;
+  inset: 21px -20px 21px auto;
+  background: var(--color-primary-500);
+  transform: skewY(-60deg);
+  position-anchor: --my-anchor;
+  position: absolute;
+  content: '';
+  
+} */
+
