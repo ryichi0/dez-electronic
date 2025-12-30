@@ -257,7 +257,7 @@ body {
     display: flex;
   
     .card{
-      background: url('./media/industry.jpg') center / cover no-repeat;
+      /* background: url('./media/industry.jpg') center / cover no-repeat; */
       flex: 1;
       transition: flex 0.5s, filter 0.5s;
       filter: grayscale(100%);
@@ -265,6 +265,43 @@ body {
       align-items: end;
       justify-content: center;
       overflow: hidden;
+      position: relative;
+
+      & .card__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        
+      }
+
+      & .card__cover{
+        display: none;
+        padding: 1em;
+        background-color: var(--color-accent-200-main);
+        color: var(--color-primary-background-texts);
+        width: 100%;
+        animation: fade-up 0.5s;
+        height: 50%;
+
+        .card__cover-title{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .card__description{
+          font-size: var(--text-sm);
+          font-weight: var(--font-regular);
+          line-height: var(--leading-fa-sm);
+          color: inherit;
+        }
+      }
     }
     
     .card:hover{
@@ -276,29 +313,6 @@ body {
         flex-direction: column;
         justify-content: space-between;
         
-      }
-    }
-    
-    .card__cover{
-      display: none;
-      padding: 1em;
-      background-color: var(--color-accent-200-main);
-      color: var(--color-primary-background-texts);
-      width: 100%;
-      animation: fade-up 0.5s;
-      height: 50%;
-
-      .card__cover-title{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .card__description{
-        font-size: var(--text-sm);
-        font-weight: var(--font-regular);
-        line-height: var(--leading-fa-sm);
-        color: inherit;
       }
     }
   }
@@ -317,7 +331,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 38px;
+      gap: 18px;
     }
 
     .card__action{

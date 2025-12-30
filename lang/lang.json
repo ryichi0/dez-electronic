@@ -21,12 +21,12 @@
   "services": {
     "items": {
       "fa": [
-        { "title": "مخابرات", "description": "انتقال داده صنعتی" },
-        { "title": "اتوماسیون", "description": "کنترل فرآیندها" }
+        { "image": "./media/industry.jpg", "title": "مخابرات", "description": "انتقال داده صنعتی" },
+        {"image": "./media/bactrack.jpg", "title": "اتوماسیون", "description": "کنترل فرآیندها" }
       ],
       "en": [
-        { "title": "Telecom", "description": "Industrial data transfer" },
-        { "title": "Automation", "description": "Process control" }
+        {"image": "./media/industry.jpg", "title": "Telecom", "description": "Industrial data transfer" },
+        {"image": "", "title": "Automation", "description": "Process control" }
       ]
     },
     "info": {

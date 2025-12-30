@@ -17,7 +17,7 @@ function renderNode(el, value) {
     const template = el.querySelector(":scope > template");
     if (!template) return;
 
-    
+    // پاک کردن محتوای قبلی غیر از template
     el.querySelectorAll(":scope > :not(template)").forEach(n => n.remove());
 
     value.forEach(item => {
@@ -29,16 +29,20 @@ function renderNode(el, value) {
 
         if (fieldValue == null) return;
 
+
         if (Array.isArray(fieldValue)) {
           renderNode(fieldEl, fieldValue);
         } else if (fieldEl.tagName === "IMG") {
-          fieldEl.src = fieldValue;
+           if (fieldValue) {
+            fieldEl.src = fieldValue;
+          }
         } else if (fieldEl.tagName === "A") {
           if (typeof fieldValue === "object") {
             fieldEl.textContent = fieldValue.text || "";
             if (fieldValue.href) fieldEl.href = fieldValue.href;
           } else {
             fieldEl.textContent = fieldValue;
+            fieldEl.href = fieldValue; 
           }
         } else {
           fieldEl.textContent = fieldValue;

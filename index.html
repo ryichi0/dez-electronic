@@ -74,6 +74,7 @@
 
           <template>
             <div class="card">
+              <img data-field="image" src="" alt="" class="card__img">
               <div class="card__cover">
                 <div class="card__cover-title">
                   <h5 data-field="title"></h5>
@@ -89,7 +90,10 @@
         </article>
 
         <aside class="services__info-card">
-          <h4 class="card__header" data-i18n="services.info.title"></h4>
+          <div class="card__header">
+            <h4 data-i18n="services.info.title"></h4>
+            <img src="./media/up-arrow.svg" alt="">
+          </div>
           <a class="card__action" href="" data-i18n="services.info.action"></a>
         </aside>
       </section>
