@@ -1,0 +1,245 @@
+/* =========================
+  Responsive CSS
+========================= */
+
+/* =========================
+  Tablet: 768px - 1024px
+========================= */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+  /* Hero Section */
+  .home-hero {
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 100px;
+    gap: 40px;
+  }
+  .home-hero .hero__header {
+    max-width: 100%;
+    text-align: center;
+  }
+  .home-hero .hero__video video {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .home-hero h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .home-hero p {
+    font-size: 1rem;
+  }
+
+  /* Services Section */
+  .home-services {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    gap: 20px;
+  }
+  .home-services .services__accordione {
+    flex-direction: row;
+  }
+
+  /* Stats Section */
+  .home-stats {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home-stats .stat__container {
+    min-width: 50%;
+    border-inline-end: 1px solid var(--color-primary-stroke);
+  }
+
+  /* Products Section */
+  .home-products .product {
+    flex-direction: column;
+    align-items: center;
+    padding-block: 30px;
+  }
+  .home-products .product__img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-block-end: 20px;
+  }
+  .home-products .product__overview {
+    max-width: 100%;
+    text-align: center;
+  }
+  .home-products .product__action {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Achievements Section */
+  .home-achievements .achievements__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  /* Missions Section */
+  .home-missions .missions__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Blogs Section */
+  .home-blogs .blogs__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Navbar */
+  .navbar__logo {
+    padding-inline: 32px;
+  }
+
+  .navbar__link {
+    padding: 18px;
+  }
+
+  /* Footer */
+  .home-footer .footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* =========================
+  Mobile: <768px
+========================= */
+@media screen and (max-width: 767px) {
+
+  /* Hero Section */
+  .home-hero {
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 60px;
+    gap: 30px;
+  }
+  .home-hero .hero__header {
+    max-width: 100%;
+    text-align: center;
+  }
+  .home-hero .hero__video video {
+    width: 100%;
+    height: auto;
+  }
+  .home-hero h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .home-hero p {
+    font-size: 0.9rem;
+  }
+
+  /* Services Section */
+  .home-services {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 20px;
+  }
+  .home-services .services__accordione {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Stats Section */
+  .home-stats {
+    grid-template-columns: 1fr;
+  }
+
+  /* Products Section */
+  .home-products .product {
+    flex-direction: column;
+    align-items: center;
+    padding-block: 20px;
+  }
+  .home-products .product__img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-block-end: 16px;
+  }
+  .home-products .product__overview {
+    max-width: 100%;
+    text-align: center;
+  }
+  .home-products .product__action {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Achievements Section */
+  .home-achievements .achievements__list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Missions Section */
+  .home-missions .missions__list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Blogs Section */
+  .home-blogs .blogs__list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Navbar */
+  .home-header {
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar__logo {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    border-top: 1px solid var(--color-primary-stroke);
+  }
+
+  .navbar__item {
+    border-inline-start: none;
+    border-bottom: 1px solid var(--color-primary-stroke);
+  }
+
+  .navbar__link {
+    justify-content: center;
+    padding: 14px;
+  }
+
+  .navbar__item.btn-primary {
+    margin: 12px;
+    text-align: center;
+  }
+
+  /* dropdown زبان */
+  .navbar__lang .lang {
+    position: static;
+    opacity: 1;
+    border: none;
+  }
+
+  /* Footer */
+  .home-footer .footer {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .home-footer .copy__right p {
+    padding-block-start: 24px;
+  }
+}
