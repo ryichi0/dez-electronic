@@ -8,16 +8,27 @@ let currentLang = localStorage.getItem("lang") || DEFAULT_LANG;
 
 
 function renderNode(el, value) {
+  // ✅ متن ساده
   if (typeof value === "string") {
     el.textContent = value;
     return;
   }
 
+  // ✅ object (مثل achievements.fa)
+  if (typeof value === "object" && !Array.isArray(value)) {
+    el.querySelectorAll(":scope [data-field]").forEach(child => {
+      const key = child.dataset.field;
+      if (value[key] == null) return;
+      renderNode(child, value[key]);
+    });
+    return;
+  }
+
+  // ✅ آرایه (cards, products, achievements items)
   if (Array.isArray(value)) {
     const template = el.querySelector(":scope > template");
     if (!template) return;
 
-    // پاک کردن محتوای قبلی غیر از template
     el.querySelectorAll(":scope > :not(template)").forEach(n => n.remove());
 
     value.forEach(item => {
@@ -26,23 +37,18 @@ function renderNode(el, value) {
       clone.querySelectorAll("[data-field]").forEach(fieldEl => {
         const key = fieldEl.dataset.field;
         const fieldValue = item[key];
-
         if (fieldValue == null) return;
-
 
         if (Array.isArray(fieldValue)) {
           renderNode(fieldEl, fieldValue);
         } else if (fieldEl.tagName === "IMG") {
-           if (fieldValue) {
-            fieldEl.src = fieldValue;
-          }
+          if (fieldValue) fieldEl.src = fieldValue;
         } else if (fieldEl.tagName === "A") {
           if (typeof fieldValue === "object") {
             fieldEl.textContent = fieldValue.text || "";
             if (fieldValue.href) fieldEl.href = fieldValue.href;
           } else {
             fieldEl.textContent = fieldValue;
-            fieldEl.href = fieldValue; 
           }
         } else {
           fieldEl.textContent = fieldValue;
@@ -53,6 +59,7 @@ function renderNode(el, value) {
     });
   }
 }
+
 
 // Load language
 function loadLanguage(lang) {

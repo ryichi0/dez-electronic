@@ -205,7 +205,19 @@
           "issuerIcon": "./media/Icon.png"
         },
         {
-          "image": "./media/cert-02.png",
+          "image": "./media/cert-01.png",
+          "title": "برگزیده فناوری پیشرفته",
+          "issuer": "معاونت علمی ریاست جمهوری",
+          "issuerIcon": "./media/Icon.png"
+        },
+        {
+          "image": "./media/cert-01.png",
+          "title": "برگزیده فناوری پیشرفته",
+          "issuer": "معاونت علمی ریاست جمهوری",
+          "issuerIcon": "./media/Icon.png"
+        },
+        {
+          "image": "./media/cert-01.png",
           "title": "برگزیده فناوری پیشرفته",
           "issuer": "معاونت علمی ریاست جمهوری",
           "issuerIcon": "./media/Icon.png"
@@ -223,16 +235,127 @@
           "issuerIcon": "./media/Icon.png"
         },
         {
-          "image": "./media/cert-02.png",
+          "image": "./media/cert-01.png",
+          "title": "Advanced Technology Award",
+          "issuer": "Vice Presidency for Science & Technology",
+          "issuerIcon": "./media/Icon.png"
+        },
+        {
+          "image": "./media/cert-01.png",
+          "title": "Advanced Technology Award",
+          "issuer": "Vice Presidency for Science & Technology",
+          "issuerIcon": "./media/Icon.png"
+        },
+        {
+          "image": "./media/cert-01.png",
           "title": "Advanced Technology Award",
           "issuer": "Vice Presidency for Science & Technology",
           "issuerIcon": "./media/Icon.png"
         }
       ]
     }
+  },
+  "footer": {
+    "fa": {
+      "contact": {
+        "company": "دز الکترونیک جنوب",
+        "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است",
+        "items": [
+          {
+            "icon": "./media/location.svg",
+            "text": "خوزستان - اهواز - مجتمع X",
+            "link": {
+              "href": "https://maps.google.com",
+              "text": "خوزستان - اهواز - مجتمع X"
+            }
+          },
+          {
+            "icon": "./media/phone.svg",
+            "text": "06133364527-29",
+            "link": {
+              "href": "tel:06133364527",
+              "text": "06133364527-29"
+            }
+          }
+        ]
+      },
+
+      "pages": {
+        "title": "صفحات",
+        "items": [
+          { "link": { "href": "#", "text": "محصولات" } },
+          { "link": { "href": "#", "text": "تماس با ما" } },
+          { "link": { "href": "#", "text": "درباره ما" } }
+        ]
+      },
+
+      "socials": {
+        "title": "شبکه‌های اجتماعی",
+        "items": [
+          {
+            "icon": "./media/instagram.svg",
+            "link": { "href": "https://instagram.com" }
+          },
+          {
+            "icon": "./media/linkedin.svg",
+            "link": { "href": "https://linkedin.com" }
+          }
+        ]
+      },
+
+      "copyright": "© تمامی حقوق برای دز الکترونیک جنوب محفوظ است."
+    },
+
+    "en": {
+      "contact": {
+        "company": "Dez Electronic South",
+        "description": "A technology-driven company focused on high-tech industrial solutions.",
+        "items": [
+          {
+            "icon": "./media/location.svg",
+            "text": "Ahvaz, Khuzestan, Complex X",
+            "link": {
+              "href": "https://maps.google.com",
+              "text": "Ahvaz, Khuzestan, Complex X"
+            }
+          },
+          {
+            "icon": "./media/phone.svg",
+            "text": "+98 61 3336 4527",
+            "link": {
+              "href": "tel:+986133364527",
+              "text": "+98 61 3336 4527"
+            }
+          }
+        ]
+      },
+
+      "pages": {
+        "title": "Pages",
+        "items": [
+          { "link": { "href": "#", "text": "Products" } },
+          { "link": { "href": "#", "text": "Contact Us" } },
+          { "link": { "href": "#", "text": "About Us" } }
+        ]
+      },
+
+      "socials": {
+        "title": "Social Media",
+        "items": [
+          {
+            "icon": "./media/instagram.svg",
+            "link": { "href": "https://instagram.com" }
+          },
+          {
+            "icon": "./media/linkedin.svg",
+            "link": { "href": "https://linkedin.com" }
+          }
+        ]
+      },
+
+      "copyright": "© All rights reserved for Dez Electronic South."
+    }
   }
-
-
 }
 
 

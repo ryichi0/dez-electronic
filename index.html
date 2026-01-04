@@ -183,77 +183,80 @@
 
     </main>
 
-    <footer class="home-footer container">
+    <footer class="home-footer container" data-i18n="footer">
       <div class="footer">
-        <!-- Contact -->
-        <div class="footer__section">
-          <div class="footer__title">
-            <h4>
-              <img width="36" class="logo" src="./media/dez_logo.png" alt="" />
-              دز الکترونیک جنوب
+
+        <!-- Brand & Contact -->
+        <section class="footer__section" data-field="contact">
+
+          <header class="footer__title">
+            <h4 class="footer__brand">
+              <img width="36" class="logo" src="./media/dez_logo.png" alt="Dez Electronic Logo">
+              <span data-field="company"></span>
             </h4>
-            <p>
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است
-            </p>
-          </div>
-          <ul>
-            <li>
-              <a href="mailto:info@site.com">
-                <img width="16" src="./media/location.svg" alt="" />
-                خوزستان-اهواز-مجتمع x
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img width="20" class="icon" src="./media/phone.svg" alt="" />
-                06133364527-29
-              </a>
-            </li>
-          </ul>
-        </div>
+            <p data-field="description"></p>
+          </header>
+
+          <address>
+            <ul class="footer__contact-list" data-field="items">
+              <template>
+                <li class="footer__contact-item">
+                  <a data-field="link">
+                    <img data-field="icon" alt="">
+                    <span data-field="text"></span>
+                  </a>
+                </li>
+              </template>
+            </ul>
+          </address>
+
+        </section>
 
         <!-- Pages -->
-        <div class="footer__section">
-          <div class="footer__title">
-            <h4>صفحات</h4>
-          </div>
-          <ul class="footer__contact">
-            <li>
-              <a href="#"> محصولات </a>
-            </li>
-            <li>
-              <a href="#"> تماس با ما </a>
-            </li>
-            <li>
-              <a href="#"> درباره ما </a>
-            </li>
+        <nav class="footer__section" data-field="pages" aria-label="Footer navigation">
+
+          <header class="footer__title">
+            <h4 data-field="title"></h4>
+          </header>
+
+          <ul class="footer__links" data-field="items">
+            <template>
+              <li>
+                <a data-field="link"></a>
+              </li>
+            </template>
           </ul>
-        </div>
+
+        </nav>
 
         <!-- Socials -->
-        <div class="footer__section">
-          <div class="footer__title">
-            <h4>شبکه های اجتماعی</h4>
-          </div>
-          <ul class="footer__contact">
-            <li>
-              <a href="#">
-                <img src="./media/instagram.svg" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./media/linkedin.svg" alt="" />
-              </a>
-            </li>
+        <section class="footer__section" data-field="socials">
+
+          <header class="footer__title">
+            <h4 data-field="title"></h4>
+          </header>
+
+          <ul class="footer__socials" data-field="items">
+            <template>
+              <li>
+                <a data-field="link" target="_blank" rel="noopener">
+                  <img data-field="icon" alt="">
+                </a>
+              </li>
+            </template>
           </ul>
-        </div>
+
+        </section>
+
       </div>
+
       <div class="copy__right">
-        <p>© تمامی حقوق برای دز الکترونیک جنوب محفوظ است.</p>
+        <p data-field="copyright"></p>
       </div>
+
     </footer>
+
+
     <script src="main.js"></script>
 
   </body>
