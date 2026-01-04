@@ -504,7 +504,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 116px;
+  gap: 26px;
 
   .achievements__title{
     position: relative;
@@ -517,7 +517,7 @@ body {
     
     .achievements__item{
       filter: grayscale(100);
-      width: 284px;
+      /* max-width: 284px; */
       height: 367px;
       position: relative;
       transition: filter .4s ease;
@@ -528,6 +528,7 @@ body {
         object-fit: cover;
       }
       .item__hover-state {
+        overflow: hidden;
         opacity: 0;
         display: flex;
         flex-direction: column;
@@ -536,15 +537,14 @@ body {
         position: absolute;
         z-index: 6;
         bottom: 0;
-        height: 149px;
+        height: 50%;
         width: 100%;
         corner-shape: bevel;
-        border-start-end-radius: 60% ;
+        border-start-end-radius: 40% ;
         background: var(--color-accent-50);
         color: var(--color-primary-background-texts);
-        padding-inline: 22px;
+        padding: 47px 20px 20px 20px;
         transition: opacity .4s ease;
-        
 
         .item__issuer {
           padding: 10px;
@@ -556,6 +556,8 @@ body {
 
           span{
             font-weight: var(--font-light);
+            font-size: var(--text-base);
+            line-height: var(--leading-fa-base);
           }
 
           .item-icon {
@@ -592,6 +594,114 @@ body {
     }
   }
 }
+
+/* =========================
+  Misssion
+========================= */
+.home-missions{
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+
+  .missions__title{
+    position: relative;
+    /* min-height: 100px; */
+  }
+
+  .missions__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    
+    .missions__item {
+      text-align: center;
+      position: relative;
+      padding: 32px 52px;
+      background: var(--color-primary-background-texts);
+      border: 1px solid var(--color-primary-400);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+
+      &::before{
+        position: absolute;
+        content:'';
+        inset: 0;
+        z-index: -2;
+        transform: translate(-16px, 16px);
+        background-color: var(--color-primary-700);
+
+      }
+
+      .item__icon{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/* =========================
+  Blogs
+========================= */
+.home-blogs{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-block-start: 100px;
+
+  .blogs__title{
+    position: relative;
+  }
+
+  .blogs__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    .blogs__item{
+      background: #FBFBFB;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .item__img{
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+      }
+      .item__content{
+        padding: 24px 16px;
+
+        .item__category{
+          font-size: var(--text-sm);
+          color: var(--color-accent-100)
+        }
+
+        .item__header{
+          display: flex;
+          justify-content: space-between;
+          align-items: start;
+          min-height: 34px;
+          .item__title{
+            line-height: var(--leading-fa-xl);
+          }
+          .item__icon{
+
+          }
+        }
+        .item__description{
+          font-size: var(--text-md);
+          line-height: var(--leading-fa-md);
+        }
+
+      }
+    }
+  }
+}
+
 
 /* =========================
   Haeder / Navbar
@@ -772,7 +882,7 @@ body {
   max-height: 100px;
   inset-inline-start: -20px;
   background: var(--color-primary-500);
-  transform: skewY(-60deg);
+  transform: skewY(55deg);
 }
 
 /* .anchor{

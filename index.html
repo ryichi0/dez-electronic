@@ -183,6 +183,64 @@
 
     </main>
 
+    <section class="home-missions section container" data-i18n="missions">
+      <h2 class="missions__title skew-shape" data-field="title"></h2>
+      <div class="missions__list" data-field="items">
+        <template>
+          <div class="missions__item">
+
+            <img
+              class="item__icon"
+              data-field="icon"
+              alt=""
+              width="36"
+            >
+
+            <header class="item__header">
+              <h5 class="item__title" data-field="title"></h5>
+            </header>
+
+            <p class="item__description" data-field="description"></p>
+
+          </div>
+        </template>
+      </div>
+    </section>
+
+    <section class="home-blogs section container" data-i18n="blogs">
+
+      <header>
+        <h2 class="blogs__title skew-shape" data-field="title"></h2>
+        <p class="blogs__subtitle" data-field="subtitle"></p>
+      </header>
+      <div class="blogs__list" data-field="items">
+        <template>
+          <div class="blogs__item">
+
+            <img
+              class="item__img"
+              data-field="image"
+              alt=""
+              width="100"
+            >
+            <div class="item__content">
+              <span class="item__category" data-field="category"></span>
+              <header class="item__header">
+                <h5 class="item__title" data-field="title"></h5>
+                <a class="item__link" data-field="link" href="">
+                  <img class="item__icon" src="./media/up-arrow.svg" alt="">
+                  
+                </a>
+              </header>
+              <p class="item__description" data-field="description"></p>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+
+
+
     <footer class="home-footer container" data-i18n="footer">
       <div class="footer">
 

@@ -355,6 +355,116 @@
 
       "copyright": "© All rights reserved for Dez Electronic South."
     }
+  },
+  "missions": {
+    "fa": {
+      "title": "ماموریت‌های دز الکترونیک",
+      "items": [
+        {
+          "icon": "./media/shield-tick.png",
+          "title": "تحلیل شکاف فناوری",
+          "description": "تحلیل دقیق نیازهای صنعتی برای خلق راهکارهای عملیاتی"
+        },
+        {
+          "icon": "./media/shield-tick.png",
+          "title": "توسعه محصول",
+          "description": "تبدیل ایده‌های علمی به محصولات High-Tech قابل استقرار"
+        },
+        {
+          "icon": "./media/shield-tick.png",
+          "title": "توسعه محصول",
+          "description": "تبدیل ایده‌های علمی به محصولات High-Tech قابل استقرار"
+        }
+      ]
+    },
+    "en": {
+      "title": "Our Missions",
+      "items": [
+        {
+          "icon": "./media/shield-tick.png",
+          "title": "Technology Gap Analysis",
+          "description": "Identifying industrial gaps for scalable solutions"
+        },
+        {
+          "icon": "./media/shield-tick.png",
+          "title": "Technology Gap Analysis",
+          "description": "Identifying industrial gaps for scalable solutions"
+        },
+        {
+          "icon": "./media/shield-tick.png",
+          "title": "Technology Gap Analysis",
+          "description": "Identifying industrial gaps for scalable solutions"
+        }
+      ]
+    }
+  },
+  "blogs": {
+    "fa": {
+      "title": "وبلاگ",
+      "subtitle": "آخرین مقالات و تحلیل‌های فنی",
+      "items": [
+        {
+          "image": "./media/blog-01.jpg",
+          "category": "صنعت",
+          "title": "تحلیل شکاف فناوری در صنعت",
+          "description": "بررسی عمیق چالش‌های تکنولوژیک صنایع ایران",
+          "link": {
+            "href": "/blog/tech-gap"
+          }
+        },
+        {
+          "image": "./media/blog-01.jpg",
+          "category": "ابزار دقیق",
+          "title": "ابزار دقیق و اتوماسیون",
+          "description": "چگونگی افزایش بهره‌وری با سیستم‌های اتوماسیون صنعتی",
+          "link": {
+            "href": "/blog/instrumentation"
+          }
+        },
+        {
+          "image": "./media/blog-01.jpg",
+          "category": "ابزار دقیق",
+          "title": "ابزار دقیق و اتوماسیون",
+          "description": "چگونگی افزایش بهره‌وری با سیستم‌های اتوماسیون صنعتی",
+          "link": {
+            "href": "/blog/instrumentation"
+          }
+        }
+      ]
+    },
+    "en": {
+      "title": "Blog",
+      "subtitle": "Latest articles & technical insights",
+      "items": [
+        {
+          "image": "./media/blog-01.jpg",
+          "category": "Industry",
+          "title": "Technology Gap Analysis in Industry",
+          "description": "In-depth review of technological challenges in Iranian industries",
+          "link": {
+            "href": "/blog/tech-gap"
+          }
+        },
+        {
+          "image": "./media/blog-01.jpg",
+          "category": "Instrumentation",
+          "title": "Instrumentation & Automation",
+          "description": "How to increase efficiency with industrial automation systems",
+          "link": {
+            "href": "/blog/instrumentation"
+          }
+        },
+        {
+          "image": "./media/blog-01.jpg",
+          "category": "Instrumentation",
+          "title": "Instrumentation & Automation",
+          "description": "How to increase efficiency with industrial automation systems",
+          "link": {
+            "href": "/blog/instrumentation"
+          }
+        }
+      ]
+    }
   }
 }
 

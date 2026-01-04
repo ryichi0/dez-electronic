@@ -29,6 +29,7 @@ function renderNode(el, value) {
     const template = el.querySelector(":scope > template");
     if (!template) return;
 
+    // حذف عناصر قبلی غیر از template
     el.querySelectorAll(":scope > :not(template)").forEach(n => n.remove());
 
     value.forEach(item => {
@@ -41,15 +42,26 @@ function renderNode(el, value) {
 
         if (Array.isArray(fieldValue)) {
           renderNode(fieldEl, fieldValue);
+
         } else if (fieldEl.tagName === "IMG") {
-          if (fieldValue) fieldEl.src = fieldValue;
+          fieldEl.src = fieldValue;
+
         } else if (fieldEl.tagName === "A") {
-          if (typeof fieldValue === "object") {
-            fieldEl.textContent = fieldValue.text || "";
-            if (fieldValue.href) fieldEl.href = fieldValue.href;
-          } else {
+          // اگر رشته بود، متن ست شود
+          if (typeof fieldValue === "string") {
             fieldEl.textContent = fieldValue;
+
+          // اگر object بود، href ست شود و متن اگر موجود بود ست شود
+          } else if (typeof fieldValue === "object") {
+            if (fieldValue.href) fieldEl.href = fieldValue.href;
+            if (fieldValue.text) {
+              // متن را بدون حذف آیکون‌ها اضافه کن
+              const span = fieldEl.querySelector("span");
+              if (span) span.textContent = fieldValue.text;
+              else fieldEl.append(fieldValue.text);
+            }
           }
+
         } else {
           fieldEl.textContent = fieldValue;
         }
@@ -59,6 +71,8 @@ function renderNode(el, value) {
     });
   }
 }
+
+
 
 
 // Load language
