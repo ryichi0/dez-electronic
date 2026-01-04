@@ -22,18 +22,217 @@
     "items": {
       "fa": [
         { "image": "./media/industry.jpg", "title": "مخابرات", "description": "انتقال داده صنعتی" },
-        {"image": "./media/bactrack.jpg", "title": "اتوماسیون", "description": "کنترل فرآیندها" }
+        { "image": "./media/industry.jpg", "title": "مخابرات", "description": "انتقال داده صنعتی" },
+        { "image": "./media/industry.jpg", "title": "مخابرات", "description": "انتقال داده صنعتی" },
+        { "image": "./media/industry.jpg", "title": "مخابرات", "description": "انتقال داده صنعتی" }
+        
       ],
       "en": [
         {"image": "./media/industry.jpg", "title": "Telecom", "description": "Industrial data transfer" },
-        {"image": "", "title": "Automation", "description": "Process control" }
+        {"image": "./media/industry.jpg", "title": "Automation", "description": "Process control" },
+        {"image": "./media/industry.jpg", "title": "Automation", "description": "Process control" },
+        {"image": "./media/industry.jpg", "title": "Automation", "description": "Process control" }
       ]
     },
     "info": {
       "title": { "fa": "فعال در صنایع مختلف", "en": "Active in many industries" },
       "action": { "fa": "بیشتر بخوانید", "en": "Read more" }
     }
+  },
+  "about": {
+    "title": {
+      "fa": "نقطه‌ی آغاز، تحلیل دقیق شکاف‌های تکنولوژیک صنعت است.",
+      "en": "The starting point is a precise analysis of technological gaps in the industry."
+    },
+    "description": {
+      "fa": "اعتبار دزالکترونیک تحت یک معماری توسعه دقیق، تضمین شده است. متخصصان این مجموعه، پس از پژوهش‌های هدفمند، ایده‌های علمی را از فضای تئوری بیرون آورده و آن‌ها را در مسیر بلوغ و تحول فنی هدایت می‌کنند. هر ایده، تحت متدولوژی‌های دقیق تجاری‌سازی به یک راهکار پایدار و مقیاس‌پذیر تبدیل می‌شود. خروجی نهایی، یک محصول High-Tech عملیاتی (آماده به کار) است که مستقیماً مسیر خود را به سوی بازار پیدا کرده و تضمین‌کنندهٔ استقرار و بهره‌برداری موفق در صنعت شما خواهد بود.",
+      "en": "Dez Electronic’s credibility is guaranteed through a precise development architecture..."
+    }
+  },
+  "stats": {
+    "items": {
+      "fa": [
+        {
+          "number": "15+",
+          "label": "سال تجربه فناورانه"
+        },
+        {
+          "number": "4+",
+          "label": "ایده‌های فناورانه تبدیل شده به محصول"
+        },
+        {
+          "number": "4+",
+          "label": "حوزه‌های استراتژیک تمرکز"
+        },
+        {
+          "number": "4+",
+          "label": "شرکت‌های کارآفرین زیرمجموعه"
+        }
+      ],
+      "en": [
+        {
+          "number": "15+",
+          "label": "Years of technological experience"
+        },
+        {
+          "number": "4+",
+          "label": "Technology ideas converted into products"
+        },
+        {
+          "number": "4+",
+          "label": "Strategic focus domains"
+        },
+        {
+          "number": "4+",
+          "label": "Subsidiary entrepreneurial companies"
+        }
+      ]
+    }
+  },
+  "products": {
+    "items": {
+      "fa": [
+        {
+          "title": "سیستم آنالیز امپدانس BacTrack",
+          "subtitle": "ابزار دقیق میکروبیولوژی، تضمین کیفیت سریع و خودکار",
+          "description": "بک ترک یک تکنولوژی پیشرفته برای اندازه‌گیری لحظه‌ای (Real-Time) رشد میکروارگانیسم‌هاست. این راه‌کار با آنالیز امپدانس الکتریکی (Impedometry)، به شرکت‌ها کمک می‌کند تا زمان نیاز به نتایج تست‌های میکروبی را از چند روز به چند ساعت کاهش دهند و دقت خروجی را به بالاترین سطح ارتقا بخشند. این سیستم در مقیاس صنعتی عملکردی پایدار و قابل اتکا دارد.",
+          "image": "./media/bactrack.jpg",
+
+          "companyLogo": "./media/dana-gene-logo.png",
+          "companyName": "محصولی از شرکت دانا ژن",
+
+          "features": [
+            { "text": "افزایش بهره‌وری خط تولید با کاهش زمان چرخه کنترل کیفیت" },
+            { "text": "طراحی ماژولار صنعتی برای نصب و توسعه سریع" },
+            { "text": "پشتیبانی و به‌روزرسانی توسط تیم دز الکترونیک" }
+          ],
+
+          "primaryAction": {
+            "text": "اطلاعات بیشتر",
+            "href": "/products/bactrack"
+          },
+          "secondaryAction": {
+            "text": "آشنایی با شرکت",
+            "href": "/companies/danagene"
+          }
+        },
+        {
+          "title": "سیستم آنالیز امپدانس BacTrack",
+          "subtitle": "ابزار دقیق میکروبیولوژی، تضمین کیفیت سریع و خودکار",
+          "description": "بک ترک یک تکنولوژی پیشرفته برای اندازه‌گیری لحظه‌ای (Real-Time) رشد میکروارگانیسم‌هاست. این راه‌کار با آنالیز امپدانس الکتریکی (Impedometry)، به شرکت‌ها کمک می‌کند تا زمان نیاز به نتایج تست‌های میکروبی را از چند روز به چند ساعت کاهش دهند و دقت خروجی را به بالاترین سطح ارتقا بخشند. این سیستم در مقیاس صنعتی عملکردی پایدار و قابل اتکا دارد.",
+          "image": "./media/bactrack.jpg",
+
+          "companyLogo": "./media/dana-gene-logo.png",
+          "companyName": "محصولی از شرکت دانا ژن",
+
+          "features": [
+            { "text": "افزایش بهره‌وری خط تولید با کاهش زمان چرخه کنترل کیفیت" },
+            { "text": "طراحی ماژولار صنعتی برای نصب و توسعه سریع" },
+            { "text": "پشتیبانی و به‌روزرسانی توسط تیم دز الکترونیک" }
+          ],
+
+          "primaryAction": {
+            "text": "اطلاعات بیشتر",
+            "href": "/products/bactrack"
+          },
+          "secondaryAction": {
+            "text": "آشنایی با شرکت",
+            "href": "/companies/danagene"
+          }
+        }
+      ],
+
+      "en": [
+        {
+          "title": "BacTrack Impedance Analysis System",
+          "subtitle": "Microbiology instrumentation, fast and automated QC",
+          "description": "BacTrack is an advanced real-time technology for microbial growth analysis...",
+          "image": "./media/bactrack.jpg",
+
+          "companyLogo": "./media/dana-gene-logo.png",
+          "companyName": "A product of Dana Gene",
+
+          "features": [
+            { "text": "Improves production efficiency by reducing QC cycle time" },
+            { "text": "Industrial modular design for fast deployment" },
+            { "text": "Supported and updated by Dez Electronic team" }
+          ],
+
+          "primaryAction": {
+            "text": "More information",
+            "href": "/en/products/bactrack"
+          },
+          "secondaryAction": {
+            "text": "About the company",
+            "href": "/en/companies/danagene"
+          }
+        },
+        {
+          "title": "BacTrack Impedance Analysis System",
+          "subtitle": "Microbiology instrumentation, fast and automated QC",
+          "description": "BacTrack is an advanced real-time technology for microbial growth analysis...",
+          "image": "./media/bactrack.jpg",
+
+          "companyLogo": "./media/dana-gene-logo.png",
+          "companyName": "A product of Dana Gene",
+
+          "features": [
+            { "text": "Improves production efficiency by reducing QC cycle time" },
+            { "text": "Industrial modular design for fast deployment" },
+            { "text": "Supported and updated by Dez Electronic team" }
+          ],
+
+          "primaryAction": {
+            "text": "More information",
+            "href": "/en/products/bactrack"
+          },
+          "secondaryAction": {
+            "text": "About the company",
+            "href": "/en/companies/danagene"
+          }
+        }
+      ]
+    }
+  },
+  "achievements": {
+    "fa": {
+      "title": "افتخارات دز الکترونیک",
+      "items": [
+        {
+          "image": "./media/cert-01.png",
+          "title": "لوح تقدیر نوآوری صنعتی",
+          "issuer": "اتاق بازرگانی تهران",
+          "issuerIcon": "./media/Icon.png"
+        },
+        {
+          "image": "./media/cert-02.png",
+          "title": "برگزیده فناوری پیشرفته",
+          "issuer": "معاونت علمی ریاست جمهوری",
+          "issuerIcon": "./media/Icon.png"
+        }
+      ]
+    },
+
+    "en": {
+      "title": "Dez Electronic Achievements",
+      "items": [
+        {
+          "image": "./media/cert-01.png",
+          "title": "Industrial Innovation Award",
+          "issuer": "Tehran Chamber of Commerce",
+          "issuerIcon": "./media/Icon.png"
+        },
+        {
+          "image": "./media/cert-02.png",
+          "title": "Advanced Technology Award",
+          "issuer": "Vice Presidency for Science & Technology",
+          "issuerIcon": "./media/Icon.png"
+        }
+      ]
+    }
   }
+
+
 }
 
 

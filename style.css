@@ -281,7 +281,12 @@ body {
       }
 
       & .card__cover{
+        position: absolute;
+        inset-block-end: 0;
+        z-index: 3;
         display: none;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 1em;
         background-color: var(--color-accent-200-main);
         color: var(--color-primary-background-texts);
@@ -310,8 +315,7 @@ body {
     
       & .card__cover{
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        
         
       }
     }
@@ -766,7 +770,7 @@ body {
   width: 8px;
   height: 100%;
   max-height: 100px;
-  inset: auto -20px auto 0;
+  inset-inline-start: -20px;
   background: var(--color-primary-500);
   transform: skewY(-60deg);
 }
