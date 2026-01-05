@@ -8,13 +8,11 @@ let currentLang = localStorage.getItem("lang") || DEFAULT_LANG;
 
 
 function renderNode(el, value) {
-  // ✅ متن ساده
   if (typeof value === "string") {
     el.textContent = value;
     return;
   }
 
-  // ✅ object (مثل achievements.fa)
   if (typeof value === "object" && !Array.isArray(value)) {
     el.querySelectorAll(":scope [data-field]").forEach(child => {
       const key = child.dataset.field;
@@ -24,12 +22,11 @@ function renderNode(el, value) {
     return;
   }
 
-  // ✅ آرایه (cards, products, achievements items)
   if (Array.isArray(value)) {
     const template = el.querySelector(":scope > template");
     if (!template) return;
 
-    // حذف عناصر قبلی غیر از template
+    
     el.querySelectorAll(":scope > :not(template)").forEach(n => n.remove());
 
     value.forEach(item => {
@@ -51,11 +48,10 @@ function renderNode(el, value) {
           if (typeof fieldValue === "string") {
             fieldEl.textContent = fieldValue;
 
-          // اگر object بود، href ست شود و متن اگر موجود بود ست شود
           } else if (typeof fieldValue === "object") {
             if (fieldValue.href) fieldEl.href = fieldValue.href;
             if (fieldValue.text) {
-              // متن را بدون حذف آیکون‌ها اضافه کن
+         
               const span = fieldEl.querySelector("span");
               if (span) span.textContent = fieldValue.text;
               else fieldEl.append(fieldValue.text);
