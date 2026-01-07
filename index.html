@@ -1,322 +1,416 @@
 <!DOCTYPE html>
 <html lang="fa">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dez Electronic</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="font.css" />
-    <link rel="stylesheet" href="responsive.css">
-    <!-- <link rel="stylesheet" href="animation.css" /> -->
-  </head>
-  <body>
-    <header class="home-header">
-      <nav class="navbar">
-        <!-- Logo -->
-        <div class="navbar__logo">
-          <a href="/">
-            <img width="100" src="./media/dez_logo.png" alt="Dez Electronic" />
-          </a>
-        </div>
 
-        <!-- Navigation Links -->
-        <ul class="navbar__menu">
-          <li class="navbar__item navbar__lang">
-            <a href="#" class="navbar__link">
-              <img
-                src="./media/chevron-down-svgrepo-com.svg"
-                width="36"
-                class="logo"
-                alt=""
-              />
-              <span data-i18n="header.lang_label">Fa</span>
-            </a>
-            <div class="lang">
-              <button id="btn-fa" data-i18n="header.lang_fa">فارسی</button>
-              <button id="btn-en" data-i18n="header.lang_en">English</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dez Electronic</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/font.css" />
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <!-- <link rel="stylesheet" href="animation.css" /> -->
+</head>
+
+<body>
+  <header class="home-header">
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="navbar__logo">
+        <a href="/">
+          <img width="100" src="./media/logos/dez_logo.png" alt="Dez Electronic" />
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="navbar__menu">
+        <li class="navbar__item navbar__lang">
+          <a href="#" class="navbar__link">
+            <img src="./media/icons/chevron-down-svgrepo-com.svg" width="36" class="logo" alt="" />
+            <span>Fa</span>
+          </a>
+          <div class="lang">
+            <button id="btn-fa">فارسی</button>
+            <button id="btn-en">English</button>
+          </div>
+        </li>
+        <li class="navbar__item">
+          <a href="/" class="navbar__link">پروژه ها</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/products" class="navbar__link">درباره ما</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/about" class="navbar__link">ارتباط با ما</a>
+        </li>
+        <li class="navbar__item btn-primary">
+          <a href="/contact" class="navbar__link">دریافت مشاوره</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="">
+    <section class="home-hero container section">
+      <div class="hero__header">
+        <h1 class="hero__title">
+          فرصت ساخت آینده بر پایه علم.
+        </h1>
+        <p class="hero__subtitle">
+          ما ایده های استراتژیک در انرژی، ابزار دقیق و اتوماسیون را شناسایی، ساختارمند و تجاری سازی می‌کنیم و پشتوانه
+          علمی پروژه های های تک هستیم.
+        </p>
+      </div>
+      <div class="hero__video">
+        <video controls poster="./media/video-thumbnail.png">
+          <source src="movie.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section class="home-services section">
+      <article class="services__accordione">
+        <div class="card">
+          <img src="./media/industry.jpg" alt="" class="card__img">
+          <div class="card__cover">
+            <div class="card__cover-title">
+              <h5>مخابرات</h5>
+              <a href="">
+                <img src="./media/icons/up-arrow.svg" alt="">
+              </a>
             </div>
+            <p class="card__description">سیستم انتقال داده بر بستر لوله(PLT)</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./media/industry.jpg" alt="" class="card__img">
+          <div class="card__cover">
+            <div class="card__cover-title">
+              <h5>مخابرات</h5>
+              <a href="">
+                <img src="./media/icons/up-arrow.svg" alt="">
+              </a>
+            </div>
+            <p class="card__description">سیستم انتقال داده بر بستر لوله(PLT)</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./media/industry.jpg" alt="" class="card__img">
+          <div class="card__cover">
+            <div class="card__cover-title">
+              <h5>مخابرات</h5>
+              <a href="">
+                <img src="./media/icons/up-arrow.svg" alt="">
+              </a>
+            </div>
+            <p class="card__description">سیستم انتقال داده بر بستر لوله(PLT)</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./media/industry.jpg" alt="" class="card__img">
+          <div class="card__cover">
+            <div class="card__cover-title">
+              <h5>مخابرات</h5>
+              <a href="">
+                <img src="./media/icons/up-arrow.svg" alt="">
+              </a>
+            </div>
+            <p class="card__description">سیستم انتقال داده بر بستر لوله(PLT)</p>
+          </div>
+        </div>
+      </article>
+      <aside class="services__info-card">
+        <div class="card__header">
+          <h4>فعال در صنایع مختلف</h4>
+          <img src="./media/icons/up-arrow.svg" alt="">
+        </div>
+        <a class="card__action" href="">درباره ما بیشتر بخوانید</a>
+      </aside>
+    </section>
+
+    <section class="home-about section container">
+      <h2 class="about__title skew-shape">
+        نقطه‌ی آغاز، تحلیل دقیق شکاف‌های تکنولوژیک صنعت است.
+      </h2>
+      <p class="about__description">اعتبار دزالکترونیک تحت یک معماری توسعه دقیق، تضمین شده است. متخصصان این مجموعه، پس
+        از پژوهش‌های هدفمند، ایده‌های علمی را از فضای تئوری بیرون آورده و آن‌ها را در مسیر بلوغ و تحول فنی هدایت
+        می‌کنند. هر ایده، تحت متدولوژی‌های دقیق تجاری‌سازی به یک راهکار پایدار و مقیاس‌پذیر تبدیل می‌شود. خروجی نهایی،
+        یک محصول High-Tech عملیاتی (آماده به کار) است که مستقیماً مسیر خود را به سوی بازار پیدا کرده و تضمین‌کنندهٔ
+        استقرار و بهره‌برداری موفق در صنعت شما خواهد بود.</p>
+      </div>
+    </section>
+
+    <section class="home-stats section">
+      <div class="stat__container">
+        <div class="stat__num">+15</div>
+        <div class="stat__description">سال تجربه فناورانه</div>
+      </div>
+      <div class="stat__container">
+        <div class="stat__num">+15</div>
+        <div class="stat__description">سال تجربه فناورانه</div>
+      </div>
+      <div class="stat__container">
+        <div class="stat__num">+15</div>
+        <div class="stat__description">سال تجربه فناورانه</div>
+      </div>
+      <div class="stat__container">
+        <div class="stat__num">+15</div>
+        <div class="stat__description">سال تجربه فناورانه</div>
+      </div>
+    </section>
+
+    <section class="home-products container section">
+      <div class="product">
+        <div class="product__overview">
+          <div class="product__header skew-shape">
+            <h3 class="product__title">سیستم آنالیز امپدانس BacTrack</h3>
+            <p class="product__subtitle">ابزار دقیق میکروبیولوژی، تضمین کیفیت سریع و خودکار</p>
+          </div>
+          <div class="product__company">
+            <img class="logo" alt="" src="./media/logos/dana-gene-logo.png">
+            <h4 class="company__name"> محصولی از شرکت دانا ژن</h4>
+          </div>
+          <div class="product__description">
+            <p>بک ترک یک تکنولوژی پیشرفته برای اندازه‌گیری لحظه‌ای (Real-Time) رشد میکروارگانیسم‌هاست. این راه‌کار با
+              آنالیز امپدانس الکتریکی (Impedometry)، به شرکت‌ها کمک می‌کند تا زمان نیاز به نتایج تست‌های میکروبی را از
+              چند روز به چند ساعت کاهش دهند و دقت خروجی را به بالاترین سطح ارتقا بخشند. این سیستم در مقیاس صنعتی عملکردی
+              پایدار و قابل اتکا دارد.</p>
+            <ul class="product__features">
+              <li class="feature-item">افزایش بهره‌وری خط تولید با کاهش زمان چرخه کنترل کیفیت و قرنطینه محصول</li>
+              <li class="feature-item">طراحی ماژولار صنعتی برای نصب، سرویس و توسعه سریع ظرفیت آزمایشگاهی.</li>
+              <li class="feature-item">پشتیبانی و به‌روزرسانی توسط تیم تخصصی دزاکترونیک</li>
+            </ul>
+          </div>
+          <div class="product__action">
+            <a class="btn btn-primary">اطلاعات بیشتر</a>
+            <a class="btn btn-secondary">آشنایی با شرکت</a>
+          </div>
+        </div>
+        <img class="product__img" alt="" src="./media/bactrack.jpg">
+      </div>
+    </section>
+
+    <section class="home-achievements container section">
+      <h2 class="achievements__title skew-shape">افتخارات دز الکترونیک</h2>
+      <div class="achievements__list">
+        <div class="achievements__item">
+          <img class="item__img" alt="" src="./media/cert-01.png">
+          <div class="item__hover-state">
+            <h5 class="item__title">عنوان لوح تقدیر</h5>
+            <div class="item__issuer">
+              <img class="item-icon" alt="" src="./media/icons/Icon.png">
+              <span>اتاق بازرگانی تهران</span>
+            </div>
+          </div>
+        </div>
+        <div class="achievements__item">
+          <img class="item__img" alt="" src="./media/cert-01.png">
+          <div class="item__hover-state">
+            <h5 class="item__title">عنوان لوح تقدیر</h5>
+            <div class="item__issuer">
+              <img class="item-icon" alt="" src="./media/icons/Icon.png">
+              <span>اتاق بازرگانی تهران</span>
+            </div>
+          </div>
+        </div>
+        <div class="achievements__item">
+          <img class="item__img" alt="" src="./media/cert-01.png">
+          <div class="item__hover-state">
+            <h5 class="item__title">عنوان لوح تقدیر</h5>
+            <div class="item__issuer">
+              <img class="item-icon" alt="" src="./media/icons/Icon.png">
+              <span>اتاق بازرگانی تهران</span>
+            </div>
+          </div>
+        </div>
+        <div class="achievements__item">
+          <img class="item__img" alt="" src="./media/cert-01.png">
+          <div class="item__hover-state">
+            <h5 class="item__title">عنوان لوح تقدیر</h5>
+            <div class="item__issuer">
+              <img class="item-icon" alt="" src="./media/icons/Icon.png">
+              <span>اتاق بازرگانی تهران</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-missions section container">
+      <h2 class="missions__title skew-shape">ماموریت ما</h2>
+      <div class="missions__list">
+        <div class="missions__item">
+          <img class="item__icon" alt="" width="36" src="./media/icons/shield-tick.png">
+          <header class="item__header">
+            <h5 class="item__title">متن عنوان متن عنوان</h5>
+          </header>
+          <p class="item__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+            گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و </p>
+        </div>
+        <div class="missions__item">
+          <img class="item__icon" alt="" width="36" src="./media/icons/shield-tick.png">
+          <header class="item__header">
+            <h5 class="item__title">متن عنوان متن عنوان</h5>
+          </header>
+          <p class="item__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+            گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و </p>
+        </div>
+        <div class="missions__item">
+          <img class="item__icon" alt="" width="36" src="./media/icons/shield-tick.png">
+          <header class="item__header">
+            <h5 class="item__title">متن عنوان متن عنوان</h5>
+          </header>
+          <p class="item__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+            گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-blogs section container">
+      <header>
+        <h2 class="blogs__title skew-shape">بلاگ ها</h2>
+        <p class="blogs__subtitle">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+          گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و </p>
+      </header>
+      <div class="blogs__list">
+        <div class="blogs__item">
+          <img class="item__img" alt="" width="100" src="./media/blog-01.jpg">
+          <div class="item__content">
+            <span class="item__category">دسته بندی</span>
+            <header class="item__header">
+              <h5 class="item__title">متن تیتر بلاگ شماره 1</h5>
+              <a class="item__link" href="">
+                <img class="item__icon" src="./media/icons/up-arrow.svg" alt="">
+              </a>
+            </header>
+            <p class="item__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+              طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+          </div>
+        </div>
+        <div class="blogs__item">
+          <img class="item__img" alt="" width="100" src="./media/blog-01.jpg">
+          <div class="item__content">
+            <span class="item__category">دسته بندی</span>
+            <header class="item__header">
+              <h5 class="item__title">متن تیتر بلاگ شماره 1</h5>
+              <a class="item__link" href="">
+                <img class="item__icon" src="./media/icons/up-arrow.svg" alt="">
+              </a>
+            </header>
+            <p class="item__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+              طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+          </div>
+        </div>
+        <div class="blogs__item">
+          <img class="item__img" alt="" width="100" src="./media/blog-01.jpg">
+          <div class="item__content">
+            <span class="item__category">دسته بندی</span>
+            <header class="item__header">
+              <h5 class="item__title">متن تیتر بلاگ شماره 1</h5>
+              <a class="item__link" href="">
+                <img class="item__icon" src="./media/icons/up-arrow.svg" alt="">
+              </a>
+            </header>
+            <p class="item__description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+              طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <footer class="home-footer container">
+    <div class="footer">
+
+      <!-- Brand & Contact -->
+      <section class="footer__section">
+
+        <header class="footer__title">
+          <h4 class="footer__brand">
+            <img width="36" class="logo" src="./media/logos/dez_logo.png" alt="Dez Electronic Logo">
+            <span>دز الکترونیک جنوب</span>
+          </h4>
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+        </header>
+
+        <address>
+          <ul class="footer__contact-list">
+
+            <li class="footer__contact-item">
+              <a>
+                <img alt="" src="./media/icons/location.svg">
+                <span>خوزستان-اهواز-مجتمع x</span>
+              </a>
+            </li>
+            <li class="footer__contact-item">
+              <a>
+                <img alt="" src="./media/icons/phone.svg">
+                <span>06133364527-29</span>
+              </a>
+            </li>
+          </ul>
+        </address>
+
+      </section>
+
+      <!-- Pages -->
+      <nav class="footer__section" aria-label="Footer navigation">
+
+        <header class="footer__title">
+          <h4>صفحات</h4>
+        </header>
+
+        <ul class="footer__links">
+          <li>
+            <a>محصولات</a>
           </li>
-          <li class="navbar__item">
-            <a href="/" class="navbar__link" data-i18n="header.nav_projects">پروژه ها</a>
+          <li>
+            <a>تماس با ما</a>
           </li>
-          <li class="navbar__item">
-            <a href="/products" class="navbar__link" data-i18n="header.nav_about">درباره ما</a>
+          <li>
+            <a>درباره ما</a>
           </li>
-          <li class="navbar__item">
-            <a href="/about" class="navbar__link" data-i18n="header.nav_contact">ارتباط با ما</a>
-          </li>
-          <li class="navbar__item btn-primary">
-            <a href="/contact" class="navbar__link" data-i18n="header.nav_consult">دریافت مشاوره</a>
-          </li>
+
         </ul>
       </nav>
-    </header>
-    
-    <main class="">
-      <section class="home-hero container section">
-        <div class="hero__header">
-          <h1 data-i18n="hero.title" class="hero__title">
-            فرصت ساخت آینده بر پایه علم.
-          </h1>
-          <p data-i18n="hero.subtitle" class="hero__subtitle">
-            ما ایده های استراتژیک در انرژی، ابزار دقیق و اتوماسیون را شناسایی، ساختارمند و تجاری سازی می‌کنیم و پشتوانه علمی پروژه های های تک هستیم.
-          </p>
-        </div>
-        <div class="hero__video">
-          <video controls poster="./media/video-thumbnail.png">
-            <source src="movie.mp4" type="video/mp4">
-          </video>
-        </div>
-      </section>
 
-      <section class="home-services section">
-        <article class="services__accordione" data-i18n="services.items">
+      <!-- Socials -->
+      <section class="footer__section">
 
-          <template>
-            <div class="card">
-              <img data-field="image" src="" alt="" class="card__img">
-              <div class="card__cover">
-                <div class="card__cover-title">
-                  <h5 data-field="title"></h5>
-                  <a href="">
-                    <img src="./media/up-arrow.svg" alt="">
-                  </a>
-                </div>
-                <p class="card__description" data-field="description"></p>
-              </div>
-            </div>
-          </template>
+        <header class="footer__title">
+          <h4></h4>
+        </header>
 
-        </article>
+        <ul class="footer__socials">
 
-        <aside class="services__info-card">
-          <div class="card__header">
-            <h4 data-i18n="services.info.title"></h4>
-            <img src="./media/up-arrow.svg" alt="">
-          </div>
-          <a class="card__action" href="" data-i18n="services.info.action"></a>
-        </aside>
-      </section>
+          <li>
+            <a target="_blank" rel="noopener">
+              <img alt="" src="./media/icons/instagram.svg">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener">
+              <img alt="" src="./media/icons/linkedin.svg">
+            </a>
+          </li>
 
-      <section class="home-about section container">
-        <h2 class="about__title skew-shape target" data-i18n="about.title">
-        </h2>
-        <p class="about__description" data-i18n="about.description"></p>
-        </div>
-      </section>
-
-      <section class="home-stats section"
-         data-i18n="stats.items">
-
-        <template>
-          <div class="stat__container">
-            <div class="stat__num" data-field="number"></div>
-            <div class="stat__description" data-field="label"></div>
-          </div>
-        </template>
+        </ul>
 
       </section>
 
-      <section class="home-products container section"
-         data-i18n="products.items">
-        <template>
-          <div class="product">
-            <div class="product__overview">
+    </div>
 
-              <div class="product__header skew-shape">
-                <h3 class="product__title" data-field="title"></h3>
-                <p class="product__subtitle" data-field="subtitle"></p>
-              </div>
+    <div class="copy__right">
+      <p></p>
+    </div>
 
-              <div class="product__company">
-                <img class="logo" data-field="companyLogo" alt="">
-                <h4 class="company__name" data-field="companyName"></h4>
-              </div>
-
-              <div class="product__description">
-                <p data-field="description"></p>
-
-                <ul class="product__features" data-field="features">
-                  <template>
-                    <li class="feature-item" data-field="text"></li>
-                  </template>
-                </ul>
-              </div>
-
-              <div class="product__action">
-                <a class="btn btn-primary" data-field="primaryAction"></a>
-                <a class="btn btn-secondary" data-field="secondaryAction"></a>
-              </div>
-
-            </div>
-
-            <img class="product__img" data-field="image" alt="">
-          </div>
-        </template>
-
-      </section>
-
-      <section class="home-achievements container section"
-         data-i18n="achievements">
-
-        <h2 class="achievements__title skew-shape" data-field="title"></h2>
-
-        <div class="achievements__list" data-field="items">
-          <template>
-            <div class="achievements__item">
-
-              <img class="item__img" data-field="image" alt="">
-
-              <div class="item__hover-state">
-                <h5 class="item__title" data-field="title"></h5>
-
-                <div class="item__issuer">
-                  <img class="item-icon" data-field="issuerIcon" alt="">
-                  <span data-field="issuer"></span>
-                </div>
-              </div>
-
-            </div>
-          </template>
-        </div>
-
-      </section>
-
-    </main>
-
-    <section class="home-missions section container" data-i18n="missions">
-      <h2 class="missions__title skew-shape" data-field="title"></h2>
-      <div class="missions__list" data-field="items">
-        <template>
-          <div class="missions__item">
-
-            <img
-              class="item__icon"
-              data-field="icon"
-              alt=""
-              width="36"
-            >
-
-            <header class="item__header">
-              <h5 class="item__title" data-field="title"></h5>
-            </header>
-
-            <p class="item__description" data-field="description"></p>
-
-          </div>
-        </template>
-      </div>
-    </section>
-
-    <section class="home-blogs section container" data-i18n="blogs">
-
-      <header>
-        <h2 class="blogs__title skew-shape" data-field="title"></h2>
-        <p class="blogs__subtitle" data-field="subtitle"></p>
-      </header>
-      <div class="blogs__list" data-field="items">
-        <template>
-          <div class="blogs__item">
-
-            <img
-              class="item__img"
-              data-field="image"
-              alt=""
-              width="100"
-            >
-            <div class="item__content">
-              <span class="item__category" data-field="category"></span>
-              <header class="item__header">
-                <h5 class="item__title" data-field="title"></h5>
-                <a class="item__link" data-field="link" href="">
-                  <img class="item__icon" src="./media/up-arrow.svg" alt="">
-                  
-                </a>
-              </header>
-              <p class="item__description" data-field="description"></p>
-            </div>
-          </div>
-        </template>
-      </div>
-    </section>
+  </footer>
 
 
+  <script src="main.js"></script>
 
-    <footer class="home-footer container" data-i18n="footer">
-      <div class="footer">
+</body>
 
-        <!-- Brand & Contact -->
-        <section class="footer__section" data-field="contact">
-
-          <header class="footer__title">
-            <h4 class="footer__brand">
-              <img width="36" class="logo" src="./media/dez_logo.png" alt="Dez Electronic Logo">
-              <span data-field="company"></span>
-            </h4>
-            <p data-field="description"></p>
-          </header>
-
-          <address>
-            <ul class="footer__contact-list" data-field="items">
-              <template>
-                <li class="footer__contact-item">
-                  <a data-field="link">
-                    <img data-field="icon" alt="">
-                    <span data-field="text"></span>
-                  </a>
-                </li>
-              </template>
-            </ul>
-          </address>
-
-        </section>
-
-        <!-- Pages -->
-        <nav class="footer__section" data-field="pages" aria-label="Footer navigation">
-
-          <header class="footer__title">
-            <h4 data-field="title"></h4>
-          </header>
-
-          <ul class="footer__links" data-field="items">
-            <template>
-              <li>
-                <a data-field="link"></a>
-              </li>
-            </template>
-          </ul>
-
-        </nav>
-
-        <!-- Socials -->
-        <section class="footer__section" data-field="socials">
-
-          <header class="footer__title">
-            <h4 data-field="title"></h4>
-          </header>
-
-          <ul class="footer__socials" data-field="items">
-            <template>
-              <li>
-                <a data-field="link" target="_blank" rel="noopener">
-                  <img data-field="icon" alt="">
-                </a>
-              </li>
-            </template>
-          </ul>
-
-        </section>
-
-      </div>
-
-      <div class="copy__right">
-        <p data-field="copyright"></p>
-      </div>
-
-    </footer>
-
-
-    <script src="main.js"></script>
-
-  </body>
 </html>
