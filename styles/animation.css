@@ -8,3 +8,13 @@
     transform: translateY(0);
   }
 }
+
+/* انیمیشن پیوسته */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

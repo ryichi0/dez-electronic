@@ -242,6 +242,21 @@ body {
   color: var(--color-accent-200-main);
 }
 
+.logo {
+  height: 26px;
+}
+
+.skew-shape::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 100%;
+  max-height: 100px;
+  inset-inline-start: -20px;
+  background: var(--color-primary-500);
+  transform: skewY(55deg);
+}
+
 /* =========================
   Hero Section
 ========================= */
@@ -280,7 +295,7 @@ body {
 .home-services {
   display: grid;
   grid-template-columns: 7fr 265px;
-  height: 222px;
+  height: 300px;
 
   .services__accordione {
     display: flex;
@@ -320,7 +335,7 @@ body {
         background-color: var(--color-accent-200-main);
         color: var(--color-primary-background-texts);
         width: 100%;
-        animation: fade-up 0.5s;
+        animation: fade-up 0.4s linear;
         height: 50%;
 
         .card__cover-title {
@@ -442,9 +457,47 @@ body {
 }
 
 /* =========================
+  Infinite Carousel Section
+========================= */
+.infinite-carousel {
+  text-align: center;
+  h4{
+    margin-block-end: 40px;
+  }
+  overflow: hidden;
+  width: 100%;
+  mask: linear-gradient(
+    90deg, transparent, white 20%,white 80%,
+    transparent
+  );
+  -webkit-mask: linear-gradient(
+    90deg, transparent, white 20%,white 80%,
+    transparent
+  );
+
+  .infinite-carousel__track {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+    
+    .item {
+      width: 47px;
+      height: 47px;
+      object-fit: contain;
+      margin-inline-start: 50px;
+      flex-shrink: 0;
+    }
+
+    &:hover{
+      animation-play-state: paused;
+  
+    }
+  }
+}
+
+/* =========================
   Products Section
 ========================= */
-
 .home-products {
   padding-block-start: 130px;
   width: 100%;
@@ -556,15 +609,13 @@ body {
 
     .achievements__item {
       filter: grayscale(100);
-      /* max-width: 284px; */
-      height: 367px;
       position: relative;
       transition: filter .4s ease;
 
       .item__img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
 
       .item__hover-state {
@@ -673,7 +724,6 @@ body {
         background-color: var(--color-primary-700);
 
       }
-
       .item__icon {
         width: 100px;
         height: 100px;
@@ -706,7 +756,11 @@ body {
       display: flex;
       flex-direction: column;
       gap: 8px;
+      transition: 0.4s;
 
+      &:hover{
+        transform: scale(1.05);
+      }
       .item__img {
         width: 100%;
         height: 240px;
@@ -910,10 +964,6 @@ body {
 /* =========================
   Sizing & Layout
 ========================= */
-.logo {
-  height: 26px;
-}
-
 .container {
   max-width: 1280px;
   margin-inline: auto;
@@ -924,77 +974,9 @@ body {
   margin-block-end: 80px;
 }
 
-/* .skew-shape {
-  width: 8px;
-  height: 100px;
-  background: var(--color-primary-500);
-  transform: skew(20deg);
-} */
 
-.skew-shape::before {
-  position: absolute;
-  content: '';
-  width: 8px;
-  height: 100%;
-  max-height: 100px;
-  inset-inline-start: -20px;
-  background: var(--color-primary-500);
-  transform: skewY(55deg);
-}
 
-/* .anchor{
-  width: 8px;
-  height: 100px;
-  inset: 21px -20px 21px auto;
-  background: var(--color-primary-500);
-  transform: skewY(-60deg);
-  position-anchor: --my-anchor;
-  position: absolute;
-  content: '';
-  
-} */
 
-.infinite-carousel {
-  text-align: center;
-  h4{
-    margin-block-end: 40px;
-  }
-  overflow: hidden;
-  width: 100%;
-  -webkit-mask: linear-gradient(
-    90deg, transparent, white 20%,white 80%,
-    transparent
-  );
-}
-
-.infinite-carousel__track {
-  display: flex;
-  width: max-content;
-  animation: scroll 30s linear infinite;
-  
-  &:hover{
-    animation-play-state: paused;
-
-  }
-}
-
-.item {
-  width: 47px;
-  height: 47px;
-  object-fit: contain;
-  margin-inline-start: 50px;
-  flex-shrink: 0;
-}
-
-/* انیمیشن پیوسته */
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 
 
 
