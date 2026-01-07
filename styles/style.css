@@ -218,7 +218,7 @@ body {
     color: var(--color-primary-300);
   }
 }
-}
+
 
 
 /* =========================
@@ -454,10 +454,13 @@ body {
     display: flex;
     align-items: start;
     justify-content: space-between;
+    margin-block-end: 2.4em;
     position: sticky;
     top: 100px;
     background: var(--color-primary-background-texts);
-    padding-block: 40px;
+    padding: 40px;
+    /* box-shadow: -6px 6px 20px var(--color-primary-stroke); */
+    border: 1px solid var(--color-primary-stroke);
 
     .product__img {
       width: 411px;
@@ -950,3 +953,48 @@ body {
   content: '';
   
 } */
+
+.infinite-carousel {
+  text-align: center;
+  h4{
+    margin-block-end: 40px;
+  }
+  overflow: hidden;
+  width: 100%;
+  -webkit-mask: linear-gradient(
+    90deg, transparent, white 20%,white 80%,
+    transparent
+  );
+}
+
+.infinite-carousel__track {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+  
+  &:hover{
+    animation-play-state: paused;
+
+  }
+}
+
+.item {
+  width: 47px;
+  height: 47px;
+  object-fit: contain;
+  margin-inline-start: 50px;
+  flex-shrink: 0;
+}
+
+/* انیمیشن پیوسته */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
